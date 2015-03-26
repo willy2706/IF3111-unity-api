@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
-
+use App\User;
+use Illuminate\Database\Eloquent\Model;
 class WelcomeController extends Controller {
 
 	/*
@@ -28,9 +29,12 @@ class WelcomeController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
-	{
-		return view('welcome');
+	public function index() {
+		return response('it works!');
+	}
+
+	public function submit() {
+		return response('ok');
 	}
 
 }
